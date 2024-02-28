@@ -1,38 +1,28 @@
 import Menu from "@/components/Menu";
 import { TypeOptionMenu } from "@/types/TypeOptionMenu";
 
-export default function Home() {
+export default function Addition() {
   const optionMenu: TypeOptionMenu[] = [
     {
-      text: "Addition",
+      text: "Enter the result",
       navegateTo: "/addition",
       color: "bg-orange-400",
     },
     {
-      text: "Subtraction",
+      text: "Complete the operation",
       navegateTo: "/subtraction",
       color: "bg-blue-400",
     },
     {
-      text: "Division",
+      text: "Greater, less than, or equal to",
       navegateTo: "/division",
       color: "bg-orange-300",
     },
     {
-      text: "Multiplication",
+      text: "Random",
       navegateTo: "/addition",
       color: "bg-red-400",
     },
-    {
-      text: "Random",
-      navegateTo: "/random",
-      color: "bg-gray-400",
-    },
-    {
-      text: "Add operators",
-      navegateTo: "/add-operators",
-      color: "bg-green-400",
-    },
   ];
-  return <Menu title="Math Code" optionMenu={optionMenu} />;
+  return <Menu title="Adition" optionMenu={optionMenu} />;
 }
